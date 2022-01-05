@@ -1,5 +1,5 @@
 package com.enigma.di;
-
+//program java dibaca dari atas ke bawah
 public class App {
 
     static String address = "Jakarta";
@@ -7,6 +7,13 @@ public class App {
 
     //static hanya bisa memanggil static (jarang dipake)
     public static void main(String[] args) {
+
+        Car toyota = new Car(4, "toyota");
+        toyota.setWheel(6);
+        toyota.setColor("Black");
+        System.out.println("Ban mobil: "+ toyota.getWheel());
+        System.out.println("Warna mobil: "+ toyota.getColor());
+
 
         String naem = "Rrifqi Ramadhan";
         String fullName = "M Rifqi Ramadhan";
